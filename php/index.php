@@ -119,7 +119,7 @@ function goPage(page) {
 				<?php //페이지 네비게이션 출력 ?>
 				<div class="page-count">
 					<ul class="page-count-list">
-					<?php for ($pageInx=$pagingOption->startPage($page); $pageInx<$pagingOption->endPage($page); $pageInx++) { ?>
+					<?php for ($pageInx=$pagingOption->startPage($page); $pageInx <= $pagingOption->endPage($page); $pageInx++) { ?>
 						<li>
 						<?php if($pageInx==$page) { ?>
 							<b><?=$pageInx?></b>
